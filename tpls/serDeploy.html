@@ -1,0 +1,76 @@
+ <div class="row" id="sedeploy">
+              <div class="col-md-6">
+                    <section class="panel panel-primary">
+                        <header class="panel-heading">
+                            远程部署：
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <!-- <a href="javascript:;" class="fa fa-times"></a> -->
+                         </span>
+                        </header>
+                        <div class="panel-body">
+                            <div>
+                                <!-- <div  style="width: 100%;height:300px; text-align: center; margin:0 auto;">
+                                   
+                                </div> -->
+                                <div class="form">
+                                <form class="cmxform form-horizontal adminex-form" method="post"  action="http://192.168.2.133:8080/deploy.do" enctype="multipart/form-data" target="id_iframe">
+                                    <div class="form-group ">
+                                        <label for="war_pac" class="control-label col-lg-2">war包</label>
+                                        <div class="col-lg-10">
+                                            <input class=" form-control" id="war_pac" name="war" type="file" />
+                                        </div>
+                                    </div>
+                                    <input type="text" value="" name="ip" class="hide" id="war_ip">
+                                    <input type="text" value="" name="port" class="hide" id="war_port">
+
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-2 col-lg-10">
+                                            <button class="btn btn-primary" type="submit" id="remoteDeploy">部署</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="col-md-6">
+                    <section class="panel panel-primary">
+                        <header class="panel-heading">
+                            本地部署：
+                        <span class="tools pull-right">
+                            <a href="javascript:;" class="fa fa-chevron-down"></a>
+                            <!-- <a href="javascript:;" class="fa fa-times"></a> -->
+                         </span>
+                        </header>
+                        <div class="panel-body">
+                            <div class="form">
+                                <form class="cmxform form-horizontal adminex-form" enctype="multipart/form-data" method="get" action="http://192.168.2.133:8080/deploy.do" target="id_iframe">
+                                    <div class="form-group ">
+                                        <label for="server_path" class="control-label col-lg-2">Path</label>
+                                        <div class="col-lg-10">
+                                            <input class=" form-control" id="server_path" name="path" type="text" placeholder="请注意在前面加上 '/' "/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group ">
+                                        <label for="war_path" class="control-label col-lg-2">war路径</label>
+                                        <div class="col-lg-10">
+                                            <input class=" form-control" id="war_path" name="uri" type="text" placeholder="请填写server上的绝对路径 eg: '/server/tomcat' "/>
+                                        </div>
+                                    </div>
+                                   
+                                    <input type="text" value="" name="ip" class="hide" id="war_ip_1">
+                                    <input type="text" value="" name="port" class="hide" id="war_port_1">
+                                    <div class="form-group">
+                                        <div class="col-lg-offset-2 col-lg-10">
+                                            <button class="btn btn-primary" type="submit">部署</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>

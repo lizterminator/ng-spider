@@ -1,0 +1,45 @@
+﻿[{
+	"title": "Web服务器集群",
+	"name": "webcluster",
+	"machines": [{
+		"port": "80",
+		"name": "反向代理服务器",
+		"type": "nginx",
+		"live": false,
+		"ip": "192.168.1.170"
+	}, {
+		"port": "8888",
+		"name": "缓存服务器",
+		"type": "redis",
+		"live": false,
+		"ip": "192.168.1.155"
+	}, {
+		"port": "8080",
+		"name": "Web服务器(1)",
+		"type": "tomcat",
+		"live": true,
+		"ip": "127.0.0.1"
+	}, {
+		"port": "8080",
+		"name": "Web服务器(2)",
+		"type": "tomcat",
+		"live": true,
+		"ip": "192.168.2.170"
+	}]
+}, {
+	"title": "应用服务器集群",
+	"name": "appcluster",
+	"machines": [{
+		"port": "80",
+		"name": "应用服务器(1)",
+		"type": "ice",
+		"live": true,
+		"ip": "192.168.2.187"
+	}, {
+		"port": "80",
+		"name": "应用服务器(2)",
+		"type": "ice",
+		"live": true,
+		"ip": "192.168.2.170"
+	}]
+}]

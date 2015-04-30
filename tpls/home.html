@@ -1,0 +1,46 @@
+<div class="left-side sticky-left-side">
+    <div class="logo">
+        <a href="index.html"><!-- <img src="images/logo.png" alt=""> -->集群管理工具</a>
+    </div>
+    <div class="left-side-inner" ui-view="nav">
+
+    </div>
+
+   
+</div> 
+
+ <div class="main-content">
+ 	 <!-- header section start-->
+        <div class="header-section">
+
+            <!--toggle button start-->
+            <a class="toggle-btn"><i class="fa fa-bars"></i></a>
+            <!--toggle button end-->
+
+          
+
+            <!--notification menu start -->
+            <div class="menu-right">
+                <ul class="notification-menu">
+                    
+                    <li>
+                        <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <img src="images/photos/user-avatar.png" alt="" />
+                            admin
+                            <span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-usermenu pull-right">
+                            <li id="userSet"><a href="#"><i class="fa fa-cog"></i>  Settings</a></li>
+                            <li id="logout"><a href="#"><i class="fa fa-sign-out"></i> Log Out</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+            <!--notification menu end -->
+
+        </div>
+        <!-- header section end-->
+		
+		<div ui-view="main"></div>
+ </div>

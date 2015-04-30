@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-1.10.2.min.js"></script>
+	
+</head>
+	
+<body>
+	<input id="file" type="file" >
+	<button id="b">click</button>
+	<script type="text/javascript">
+		$('button').click(function(){
+			console.log($('#file')[0].files[0]);
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<ul class="nav nav-pills nav-stacked custom-nav" ng-repeat="item in items" >
+       <li class="menu-list active">
+			<a ui-sref="index.cluster({type:item.name})"><i class="fa fa-home"></i> <span>{{item.title}}</span></a>
+			<ul class="sub-menu-list" ng-repeat="machine in item.machines">
+				<li>
+					<a ui-sref="index.{{machine.type}}({ip:machine.ip,port:machine.port})">
+						<span class="text-{{machine.live?'success':'danger'}}">
+							<i class="fa fa-desktop"></i>
+							{{machine.name}}
+						</span>
+					</a>
+				</li>
+			</ul>
+       </li>
+</ul>
+

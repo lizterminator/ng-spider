@@ -1,0 +1,26 @@
+﻿{
+	"osinfo": {
+		"名称": " Windows 7",
+		"版本号": " 6.1",
+		"CPU核心数": " 2222",
+		"架构": " amd64"
+	},
+	"serviceinfo": [{
+		"count": "0",
+		"name": "WebMapTileService",
+		"live": true
+	}, {
+		"count": "0",
+		"name": "WebMonitor",
+		"live": true
+	}],
+	"jvminfo": {
+		"已启动时间": "",
+		"虚拟机供应商": " Oracle Corporation",
+		"开始时间": "2015-4-28 16:51:31",
+		"虚拟机内存信息": "空闲内存: 77.27 MB,所有内存: 108.50 MB,最大内存: 903.13 MB",
+		"虚拟机版本": " 23.7-b01",
+		"虚拟机名称": " Java HotSpot(TM) 64-Bit Server VM"
+	},
+	"live": true
+}
