@@ -21,18 +21,18 @@
                   <div>
                       <div style="width: 100%; text-align: center; margin:0 auto;">
                           <div class="row">
-                            <div class="col-md-4">功能</div>
-                            <div class="col-md-4">主机名/IP</div>
-                            <div class="col-md-4">状态</div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">功能</div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">主机名/IP</div>
+                            <div class="col-md-4 col-sm-4 col-xs-4">状态</div>
                             <!-- <div class="col-md-3">开关</div> -->
                           </div>
                           <hr>
 
                           <div ng-repeat="machine in cluster.machines">
                             <div class="row">
-                              <div class="col-md-4">{{machine.name}}</div>
-                              <div class="col-md-4">{{machine.ip}}</div>
-                              <div class="col-md-4"><span class="label label-{{machine.live?'success':'danger'}}">{{machine.live?'已开启':'已关闭'}}</span></div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">{{machine.name}}</div>
+                              <div class="col-md-4 col-sm-4 col-xs-4">{{machine.ip}}</div>
+                              <div class="col-md-4 col-sm-4 col-xs-4"><span class="label label-{{machine.live?'success':'danger'}}">{{machine.live?'已开启':'已关闭'}}</span></div>
 
                               <!-- <div class="col-md-3">开关</div> -->
                             </div>

@@ -21,8 +21,8 @@
                                             <input class=" form-control" id="war_pac" name="war" type="file" />
                                         </div>
                                     </div>
-                                    <input type="text" value="" name="ip" class="hide" id="war_ip">
-                                    <input type="text" value="" name="port" class="hide" id="war_port">
+                                    <input type="text"  name="ip" class="hide" id="war_ip" value="{{ip}}">
+                                    <input type="text" name="port" class="hide" id="war_port" value="{{port}}">
 
                                     <div class="form-group">
                                         <div class="col-lg-offset-2 col-lg-10">
@@ -61,8 +61,8 @@
                                         </div>
                                     </div>
                                    
-                                    <input type="text" value="" name="ip" class="hide" id="war_ip_1">
-                                    <input type="text" value="" name="port" class="hide" id="war_port_1">
+                                    <input type="text" value="{{ip}}" name="ip" class="hide" id="war_ip_1">
+                                    <input type="text" value="{{port}}" name="port" class="hide" id="war_port_1">
                                     <div class="form-group">
                                         <div class="col-lg-offset-2 col-lg-10">
                                             <button class="btn btn-primary" type="submit">部署</button>
@@ -74,3 +74,6 @@
                     </section>
                 </div>
             </div>
+
+
+            <iframe id="id_iframe" name="id_iframe" style="display:none;"></iframe> 

@@ -1,0 +1,24 @@
+ <!-- page heading start-->
+<div class="page-heading">
+    <h3 >
+      {{indexInfo.name + ' ' + indexInfo.ip}}
+    </h3>
+</div>
+<!-- page heading end-->
+<!--body wrapper start-->
+<div class="wrapper">
+
+ 	 <div role="tabpanel">
+ 	
+	  <ul class="nav nav-pills">
+	    	<li><a class="text-danger" ng-class="{navActive:$state.includes('index.nginx.phyInfo')}" ui-sref="index.nginx.phyInfo">物理信息监控</a></li>
+	    	<li><a class="text-danger" ng-class="{navActive:$state.includes('index.nginx.serInfo')}" ui-sref="index.nginx.serInfo">服务信息监控</a></li>
+	  	</ul>
+
+	  	<hr>
+	  <div class="tab-content" ui-view="content">
+	 
+	  
+	  </div>
+	</div> 
+</div>

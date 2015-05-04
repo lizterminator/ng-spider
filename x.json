@@ -1,8 +1,8 @@
 ﻿{
 	"osinfo": {
-		"名称": " Windows 7",
+		"名称": " Windows xxxx",
 		"版本号": " 6.1",
-		"CPU核心数": " 2222",
+		"CPU核心数": " 11111",
 		"架构": " amd64"
 	},
 	"serviceinfo": [{
@@ -10,7 +10,7 @@
 		"name": "WebMapTileService",
 		"live": true
 	}, {
-		"count": "1",
+		"count": "0",
 		"name": "WebMonitor",
 		"live": true
 	}],

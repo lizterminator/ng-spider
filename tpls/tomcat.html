@@ -1,7 +1,7 @@
  <!-- page heading start-->
 <div class="page-heading">
     <h3 >
-      {{tomcat.name + ' ' + tomcat.ip}}
+      {{indexInfo.name + ' ' + indexInfo.ip}}
     </h3>
 </div>
 <!-- page heading end-->
@@ -11,9 +11,9 @@
  	 <div role="tabpanel">
  	
 	  <ul class="nav nav-pills">
-	    	<li><a class="text-danger"  ui-sref="index.tomcat.phyInfo">物理信息监控</a></li>
-	    	<li><a class="text-danger"  ui-sref="index.tomcat.serInfo">服务信息监控</a></li>
-	    	<li><a class="text-danger"  ui-sref="index.tomcat.serDeploy">服务部署</a></li>
+	    	<li><a class="text-danger" ng-class="{navActive:$state.includes('index.tomcat.phyInfo')}"  ui-sref="index.tomcat.phyInfo">物理信息监控</a></li>
+	    	<li><a class="text-danger" ng-class="{navActive:$state.includes('index.tomcat.serInfo')}"  ui-sref="index.tomcat.serInfo">服务信息监控</a></li>
+	    	<li><a class="text-danger" ng-class="{navActive:$state.includes('index.tomcat.serDeploy')}"  ui-sref="index.tomcat.serDeploy">服务部署</a></li>
 	  	</ul>
 
 	  	<hr>
