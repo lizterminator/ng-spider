@@ -45,7 +45,26 @@
 <section ui-view>
   
 </section>
-
+<div aria-hidden="true" aria-labelledby="myModalLabel"  role="dialog" tabindex="-1" id="flot" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                          <h4 class="modal-title">图标</h4>
+                      </div>
+                      <div class="modal-body">
+                            <div id="reatltime-chart">
+                                <div id="reatltime-chartContainer" style="width:100%;height:300px; text-align: center; margin:0 auto;">
+                                </div>
+                            </div>
+                      </div>
+                      <div class="modal-footer">
+                          
+                           <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
 
 
 <!-- Placed js at the end of the document so the pages load faster -->
@@ -60,7 +79,15 @@
 
 <script type="text/javascript" src="js/bootstrap-toggle.min.js"></script>
 
-
+<!-- jQuery Flot Chart-->
+<script src="js/flot-chart/jquery.flot.js"></script>
+<script src="js/flot-chart/jquery.flot.tooltip.js"></script>
+<script src="js/flot-chart/jquery.flot.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.pie.resize.js"></script>
+<script src="js/flot-chart/jquery.flot.selection.js"></script>
+<script src="js/flot-chart/jquery.flot.stack.js"></script>
+<script src="js/flot-chart/jquery.flot.time.js"></script>
+<script type="text/javascript" src="js/flot.init.js"></script>
 
 
 

@@ -3,10 +3,10 @@
                     <section class="panel panel-primary">
                         <header class="panel-heading">
                             服务信息监控：
-                        <span class="tools pull-right">
+                        <!-- <span class="tools pull-right">
                             <a href="javascript:;" class="fa fa-chevron-down"></a>
-                            <!-- <a href="javascript:;" class="fa fa-times"></a> -->
-                         </span>
+                            <a href="javascript:;" class="fa fa-times"></a>
+                         </span> -->
                         </header>
                         <div class="panel-body">
                             <div >
@@ -22,11 +22,18 @@
                                   <div class="row" ng-repeat-start="item in tomcat.serviceinfo">
                                       <div class="col-md-2 col-sm-4 col-xs-4">{{item.name}}</div>
                                       <div class="col-md-2 col-sm-4 col-xs-4"><span class="label label-{{item.live?'success':'danger'}}">{{item.live?"已开启":"已关闭"}}</span></div>
-                                      <div class="col-md-2 col-sm-4 col-xs-4">{{item.count}}</div>
-                                      <div class="col-md-2 col-sm-4 col-xs-4"><button class="btn btn-default btn-{{item.live?'danger':'success'}}" ng-click="serviceToggle($index)">{{item.live?"关闭":"开启"}}</button></div>
-                                      <div class="col-md-2 col-sm-4 col-xs-4"><button class="btn btn-default btn-warning" ng-click="serviceReload($index)">reload</button></div>
                                       <div class="col-md-2 col-sm-4 col-xs-4">
-                                      <button class="btn btn-defalut btn-danger" ng-click="serviceUndeploy($index)">undeploy</button></div>
+                                      <button class="btn btn-primary" ng-click="showFlot()">
+                                         {{item.count}}
+                                      </button>
+                                       
+                                      </div>
+                                      <div class="col-md-2 col-sm-4 col-xs-4"><button class="btn btn-default btn-{{item.live?'danger':'success'}}" ng-click="serviceToggle($index)">{{item.live?"关闭":"开启"}}</button></div>
+                                      <div class="col-md-2 col-sm-4 col-xs-4"><button class="btn btn-default btn-warning" ng-click="serviceReload($index)">重新加载</button></div>
+                                      <div class="col-md-1 col-sm-2 col-xs-2">
+                                      <button class="btn btn-defalut btn-danger" ng-click="serviceUndeploy($index)">卸载</button></div>
+                                      <div class="col-md-1 col-sm-2 col-xs-2">
+                                      <button class="btn btn-defalut btn-primary" ng-click="config($index)">配置</button></div>
                                   </div>
                                   <br ng-repeat-end/>
                                 </div>
@@ -35,3 +42,25 @@
                     </section>
                 </div>
             </div>
+
+
+
+            <div aria-hidden="true" aria-labelledby="myModalLabel" role="dialog" tabindex="-1" id="hint" class="modal fade">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button aria-hidden="true" data-dismiss="modal" class="close" type="button">×</button>
+                          <h4 class="modal-title">提示</h4>
+                      </div>
+                      <div class="modal-body">
+                       {{hint}}
+                      </div>
+                      <div class="modal-footer">
+                          
+                           <button type="button" class="btn btn-default" data-dismiss="modal"> 关闭</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+           
